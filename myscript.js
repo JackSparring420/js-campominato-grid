@@ -7,7 +7,8 @@
 //  3.2 aggiungo le cassi al div per dargli dimensione e stile anche in base alla scelta
 //4. Aggiungo un addEventListener ("click"... dentro il ciclo
 //  4.1  aggiungo la classe "click-true" per cambiargli lo sfondo
-//  4.2 aggiundo la clase "done" per far visionare la posizione del quadrato
+//  4.2 stampo la posizione del quadrato
+//5.Invio tutto alla variabile gridCont 
 
 
 const gridCont = document.getElementById("grid");
