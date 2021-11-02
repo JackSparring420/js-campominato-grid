@@ -30,7 +30,7 @@ for(let i = 0; i < dimensione; i++) {
     newElement.addEventListener("click",
     function(){
         this.classList.add("click-true")
-        newElement.innerHTML += `${i+1}`
+        newElement.innerHTML += i+1
         }
     )
 
