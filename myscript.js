@@ -25,7 +25,11 @@ if(livello == "facile") {
 
 
 for(let i = 0; i < dimensione; i++) {
-    let newElement = elementGen("div", "square", difficolta);
+    // let newElement = elementGen("div", "square", "difficolta")
+    let newElement = document.createElement("div")
+    newElement.classList.add(difficolta)
+    newElement.classList.add("square")
+    
     
     newElement.addEventListener("click",
     function(){
@@ -39,9 +43,9 @@ for(let i = 0; i < dimensione; i++) {
 
 // funzioni utili
 
-function elementGen(elementGen, classPlus, classPlusB) {
-    let node= document.createElement(elementGen);
-    node.classList.add(classPlus)
-    node.classList.add(classPlusB)
-    return node
-}
+// function elementGen(elementGen, classPlus, classPlusB) {
+    // let node= document.createElement(elementGen);
+    // node.classList.add(classPlus)
+    // node.classList.add(classPlusB)
+//     return node
+// }
