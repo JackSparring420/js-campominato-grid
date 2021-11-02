@@ -11,21 +11,21 @@ const gridCont = document.getElementById("grid");
 
 const livello = prompt("Scegli: facile, medio, difficile")
 
-let difficolta;
+let dimensione;
 if(livello == "facile") {
-    difficolta = 100
-    dimensione = "facile"
+    dimensione = 100
+    difficolta = "facile"
 } else if( livello == "medio"){
-    difficolta = 81
-    dimensione = "medio"
+    dimensione = 81
+    difficolta = "medio"
 } else if (livello== "difficile"){
-    difficolta = 49;
-    dimensione ="difficile";
+    dimensione = 49;
+    difficolta ="difficile";
 }
 
 
-for(let i = 0; i < difficolta; i++) {
-    let newElement = elementGen("div", "square", dimensione);
+for(let i = 0; i < dimensione; i++) {
+    let newElement = elementGen("div", "square", difficolta);
     
     newElement.addEventListener("click",
     function(){
