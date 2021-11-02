@@ -9,19 +9,12 @@ html, body {
 }
 
 .container {
-    width: 60vw;
-    /* height: 60vw; */
+    width: 800px;
+    height: 800px;
     margin: 60px auto;
     border: 2px solid white;
     display: flex;
     flex-wrap: wrap;
-}
-
-.row {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    border: 2px solid white;
 }
 
 .square {
@@ -30,6 +23,21 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.facile {
+    width: 10%;
+    height: 10%;
+}
+
+.difficile {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.medio {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
 }
 
 .click-true {
