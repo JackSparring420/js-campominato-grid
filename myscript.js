@@ -1,7 +1,10 @@
 //1. Chiuedo al'utente che difficolta vuole
 //  1.1 creo un prompt in cui gli chiedo il grodo di difficoltà
+//  1.2 creo un ciclo while per ripetere il pronpt se l'utente sbaglia
 //2. Creo le condizioni per la quale varia il numero di quadrati in base alla difficoltà
 //3. Creo un ciclo dove genero i quadrati
+//  3.1 creo un div dentro il ciclo che mi costruirà il quadrato
+//  3.2 aggiungo le cassi al div per dargli dimensione e stile anche in base alla scelta
 //4. Aggiungo un addEventListener ("click"... dentro il ciclo
 //  4.1  aggiungo la classe "click-true" per cambiargli lo sfondo
 //  4.2 aggiundo la clase "done" per far visionare la posizione del quadrato
@@ -9,7 +12,11 @@
 
 const gridCont = document.getElementById("grid");
 
-const livello = prompt("Scegli: facile, medio, difficile")
+let livello = prompt("Scegli: facile, medio, difficile");
+
+while ((livello != "facile") && (livello != "medio") && (livello !="difficile")){
+    livello = prompt("Scegli: facile, medio, difficile");
+}
 
 let dimensione;
 if(livello == "facile") {
@@ -29,7 +36,6 @@ for(let i = 0; i < dimensione; i++) {
     let newElement = document.createElement("div")
     newElement.classList.add(difficolta)
     newElement.classList.add("square")
-    
     
     newElement.addEventListener("click",
     function(){
